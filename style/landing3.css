@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container img {
+    height: 100vh;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.form-container-in {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form-control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#form-headline {
+    width: 100%;
+    text-align: right;
+    font: normal normal 900 2.688rem/3.938rem Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+}
+
+#form-paragraph {
+    width: 100%;
+    text-align: right;
+    font: normal normal normal 1.25rem/1.813rem Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+}
+
+.label {
+    height: 100%;
+    text-align: right;
+    font: bold 1rem/1.5rem Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    font: .7rem Heebo;
+    border: 0;
+    border-bottom: 4px solid #020253;
+    transition: all 0.2s;
+}
+
+.input:hover {
+    background-color: #cedefa;
+}
+
+#btn {
+    width: 166px;
+    height: 50px;
+    margin-top: 33px;
+    height: 50px;
+    color: #ffffff;
+    background: #020253 0% 0% no-repeat padding-box;
+    font: normal normal bold 1.375rem/1.875rem Heebo;
+    border: 0;
+    transition: all 0.2s;
+}
+
+#btn:hover {
+    cursor: pointer;
+    color: #020253;
+    background: #ffffff;
+    border: 1px solid #020253;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.297);
+}
+
+
+@media screen and (max-width: 800px) {
+    .img-container {
+        margin-left: -150px;
+    }
+
+    #form-headline {
+        font: 900 1.6rem Heebo;
+    }
+
+    #form-paragraph {
+        font: normal .8rem Heebo;
+    }
+
+    .label {
+        height: 40px;
+        text-align: right;
+        font: bold 0.875rem/1.5rem Heebo;
+    }
+
+    .input {
+        height: 40px;
+    }
+
+    #btn {
+        width: 100%;
+        height: 40px;
+        font: normal normal bold 1.188rem/1.875rem Heebo;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .img-container {
+        margin-left: 0;
+    }
+
+    .img-container img {
+        height: 100vw;
+    }
+
+    .form-container {}
+
+    #form-headline {
+        width: 100%;
+        font: 900 1.8rem Heebo;
+    }
+
+    #form-paragraph {
+        width: 100%;
+        font: normal 1.2rem Heebo;
+    }
+
+    .label {
+        width: 100%;
+        height: 25px;
+    }
+
+    .input {
+        width: 100%;
+        height: 34px;
+    }
+
+    #btn {
+        width: 100%;
+        height: 34px;
+    }
+}

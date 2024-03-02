@@ -1,0 +1,283 @@
+  @media screen {
+      .container {
+          direction: rtl;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          height: 100%;
+
+      }
+
+      .header {
+          position: absolute;
+          top: 0;
+          left: 80%;
+          width: 250px;
+          height: 10px;
+          /* UI Properties */
+          background: #FDBD03 0% 0% no-repeat padding-box;
+          opacity: 1;
+      }
+
+      .bgcImage {
+          margin-top: 5%;
+          margin-bottom: 0%;
+          margin-left: 5%;
+      }
+
+      img {
+          display: block;
+          max-width: 25vw;
+      }
+
+      .formContainer {
+          display: grid;
+          grid-template-rows:
+              0.5fr 0.5fr 0.5fr 1fr 1fr;
+          flex-basis: 80%;
+          width: 50%;
+      }
+
+      h0 {
+          text-align: right;
+          font: normal normal 900 30pt Heebo;
+          letter-spacing: 0px;
+          color: #FDBD03;
+          grid-row: 2 / 3;
+          height: min-content;
+      }
+
+      p0 {
+          text-align: right;
+          font: normal normal normal 10pt Heebo;
+          letter-spacing: 0px;
+          color: #020253;
+          opacity: 1;
+          grid-row: 3/4;
+          height: min-content;
+          padding-left: 50%;
+
+      }
+
+      form {
+          direction: rtl;
+          display: grid;
+          grid-template-columns: repeat(2, 0.5fr);
+          grid-template-areas: "input1 input2"
+              "input3 input3"
+              "input3 input3"
+              "button filler";
+          grid-gap: 10px;
+          grid-template-rows: minmax(1vh, 4vh);
+          grid-row: 4/6;
+          padding-left: 10%;
+
+
+      }
+
+      .input1 {
+          grid-area: input1;
+          height: 50px !important;
+      }
+
+      .input2 {
+          grid-area: input2;
+          height: 50px !important;
+
+      }
+
+      .formInput {
+          background: #E5EEFF 0% 0% no-repeat padding-box;
+          opacity: 1;
+          border: none;
+          border-bottom: 3px solid #FDBD03;
+          width: 100%;
+          height: 60%;
+      }
+
+      .input3 {
+          grid-area: input3;
+          height: 100%;
+          margin-top: 5%;
+      }
+
+      .Icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 2%;
+          border-radius: 50%;
+          background: #FDBD03 0% 0% no-repeat padding-box;
+          box-shadow: 0px 3px 6px #00000029;
+          opacity: 1;
+          aspect-ratio: 1 / 1;
+          width: 90%;
+
+      }
+
+      .iconContainer {
+          display: flex;
+          justify-content: space-between;
+          justify-items: start;
+          align-items: end;
+          width: 25%;
+          align-self: flex-end;
+
+
+      }
+
+      li {
+          width: 200%;
+          aspect-ratio: 1/ 1;
+      }
+
+      /* .facebook {}
+
+            .instagram {}
+
+            .linkedin {}
+
+            .call {}
+ */
+      .footer {
+          position: absolute;
+          top: 90%;
+          left: 0;
+          width: 50vw;
+          height: 1vw;
+          background: #FDBD03 0% 0% no-repeat padding-box;
+          opacity: 1;
+      }
+
+      label {
+          text-align: right;
+          font: normal normal bold 8pt Heebo;
+          letter-spacing: 0px;
+          color: #2C2C2C;
+          opacity: 1;
+      }
+
+
+
+      button {
+          background: #FDBD03 0% 0% no-repeat padding-box;
+          text-align: center;
+          font: normal normal bold 10pt Heebo;
+          letter-spacing: 0.33px;
+          color: #000000;
+          opacity: 1;
+          border: none;
+          grid-area: button;
+          height: 50%;
+          width: 50%;
+      }
+
+      button:hover {
+          background: #000000;
+          color: #FDBD03;
+          pointer-events: painted;
+      }
+  }
+
+  @media (width<35em) {
+      .container {
+          direction: rtl;
+          display: grid;
+
+      }
+
+      .formContainer {
+          display: grid;
+          grid-template-rows:
+              0.5fr 0.5fr 0.5fr 1fr 1fr;
+          flex-basis: 80%;
+          width: 100%;
+      }
+
+      .bgcImage {
+          justify-self: center;
+          margin-bottom: 0;
+          margin-left: 0;
+      }
+
+      h0 {
+          text-align: center;
+          font: normal normal 900 30pt Heebo;
+          letter-spacing: 0px;
+          color: #FDBD03;
+          grid-row: 2 / 3;
+          height: min-content;
+      }
+
+      p0 {
+          text-align: center;
+          font: normal normal normal 10pt Heebo;
+          letter-spacing: 0px;
+          color: #020253;
+          opacity: 1;
+          grid-row: 3/4;
+          height: min-content;
+          padding-left: 0%;
+
+      }
+
+
+      form {
+
+          direction: rtl;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+              "input1"
+              "input2"
+              "input3"
+              "input3"
+              "button";
+          grid-gap: 10px;
+          grid-template-rows: minmax(1vh, 10vh);
+          grid-row: 4/6;
+          padding-left: 10%;
+          width: 100%;
+          justify-self: baseline;
+
+      }
+
+      .input1 {
+          grid-area: input1;
+          height: 50px !important;
+
+      }
+
+      .input2 {
+          grid-area: input2;
+          height: 50px !important;
+
+      }
+
+      .iconContainer {
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 5%;
+          opacity: 1;
+          aspect-ratio: 1 / 0.6;
+          width: 90%;
+      }
+
+      button {
+          background: #FDBD03 0% 0% no-repeat padding-box;
+          text-align: center;
+          font: normal normal bold 10pt Heebo;
+          letter-spacing: 0.33px;
+          color: #000000;
+          opacity: 1;
+          border: none;
+          grid-area: button;
+          height: 100%;
+          width: 100%;
+          grid-row: 6/7;
+          margin-top: 10%;
+      }
+  }

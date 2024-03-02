@@ -1,0 +1,262 @@
+@font-face {
+    font-family: tommyMedium;
+    src: url(MADE\ TOMMY\ Medium_PERSONAL\ USE.otf);
+}
+
+@font-face {
+    font-family: tommyLight;
+    src: url(MADE\ TOMMY\ Light_PERSONAL\ USE.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.signUpTitle {
+    font-size: 30pt;
+    margin-bottom: 5%;
+    color: #141833;
+    font-family: tommyMedium;
+}
+
+.signUpBtn {
+    position: absolute;
+    color: #141833;
+    font-family: tommyMedium;
+    font-size: 18pt;
+    top: 22%;
+}
+
+.pSignUp {
+    color: #141833;
+    font-family: tommyMedium;
+    position: absolute;
+    font-size: 12;
+    top: 19%
+}
+
+#parent {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(backgroundImage.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60vh;
+    height: 70vh;
+    text-align: center;
+    align-items: center;
+    margin: 10vh;
+    background-color: rgba(225, 225, 225, 0.3);
+    border-radius: 12px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    font-family: tommyLight;
+    margin-bottom: 5%;
+    border: none;
+    background-color: rgba(225, 225, 225, 0.8);
+    border-radius: 14px;
+    padding: 2%;
+
+}
+
+.UserIcon {
+    width: 4vh;
+    height: 4vh;
+    background-image: url(Untitled-1-01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    margin-right: 1vh;
+}
+
+.EmailIcon {
+    width: 4vh;
+    height: 4vh;
+    background-image: url(Untitled-2-01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    margin-right: 1vh;
+}
+
+.passwordIcon {
+    width: 4vh;
+    height: 4vh;
+    background-image: url(passwordIcon-01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    margin-right: 1vh;
+}
+
+.Submit {
+    width: 100%;
+    font-family: tommyMedium;
+    margin-bottom: 5%;
+    border: none;
+    background-color: #141833;
+    color: #fff;
+    border-radius: 14px;
+    padding: 2%;
+
+}
+
+.Submit:hover {
+
+    background-color: #fff;
+    color: #141833;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.swichBtn {
+    margin-top: 71vh;
+    height: 14vh;
+    width: 60vh;
+    z-index: 1;
+    background-color: #141833;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    border-radius: 50% 50% 12px 12px;
+}
+
+.swich {
+    background-color: rgba(225, 225, 225, 0);
+    color: #fff;
+    border: none;
+}
+
+.loginPage {
+    height: 60vh;
+    width: 60vh;
+    margin-top: 30vh;
+    border-radius: 12px;
+    z-index: 1;
+    background-color: #141833;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: absolute;
+    top: 0;
+    box-shadow: 5px 5px 5px rgba(33, 35, 71, 0.3);
+}
+
+.something {
+    font-size: 30pt;
+    margin-top: 40%;
+}
+
+.swichBtn:hover {
+    height: 17vh;
+    margin-top: 68vh;
+    border-radius: 70% 70% 12px 12px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.swich:hover {
+    cursor: pointer;
+}
+
+.LoginForm {
+    position: absolute;
+    margin-top: 50%;
+}
+
+.Submit2 {
+    width: 100%;
+    font-family: tommyMedium;
+    margin-bottom: 5%;
+    border: none;
+    background-color: #fff;
+    color: #141833;
+    border-radius: 14px;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+.Submit2:hover {
+
+    background-color: #141833;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.signUpBtn:hover {
+    font-size: 20pt;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (width<35em) {
+    .swichBtn {
+        width: 70%;
+    }
+
+    .loginPage {
+        width: 70%;
+    }
+}
+
+/* .register {
+    background-color: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(5%);
+    transition: .8s ease-in-out;
+}
+
+.register label {
+    color: #573b8a;
+    transform: scale(.6);
+}
+
+#chk:checked~.register {
+    transform: translateY(-60%);
+}
+
+#chk:checked~.register label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+}
+
+#chk:checked~.login label {
+    transform: scale(.6);
+    margin: 5% 0 5%;
+}
+
+button:hover {
+    background-color: #6d44b8;
+} */

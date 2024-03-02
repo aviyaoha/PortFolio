@@ -1,0 +1,241 @@
+        @media screen {
+            .gridContainer1 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 1%;
+                grid-template-areas:
+                    "pic1 pic2 header header"
+                    "pic3 pic4 header header"
+                    "pic5 pic6 pic7 pic8"
+                    "landing landing pic9 pic10"
+                    "landing landing pic11 pic12"
+                    "landing landing pic13 pic14"
+                ;
+                width: 65%;
+                margin-left: 17.5%;
+                justify-content: center;
+                align-content: center;
+                padding: 0;
+
+            }
+        }
+
+        @media (width<35em) {
+            .gridContainer1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1%;
+                grid-template-areas:
+                    "header header"
+                    "header header"
+                    "pic1 pic2"
+                    "pic3 pic4"
+                    "pic7 pic8"
+                    "pic5 pic6"
+                    "landing landing "
+                    "landing landing "
+                    "landing landing"
+                    "pic9 pic10"
+                    "pic11 pic12"
+                    "pic13 pic14"
+                ;
+                justify-content: center;
+                align-content: center;
+                width: 100%;
+                margin-left: 0;
+                padding: 0;
+            }
+
+        }
+
+        body {
+            background-color: #E5EEFF;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        h0 {
+            text-align: center;
+            font: normal normal bold 17pt Assistant;
+            letter-spacing: 0px;
+            color: #0EE1DA;
+            opacity: 1;
+            align-items: center;
+            justify-items: center;
+            margin: 4%;
+        }
+
+        p0 {
+            text-align: center;
+            font: normal normal normal 5pt Assistant;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+
+        }
+
+        .textbox1 {
+            padding: 1%;
+            place-items: center;
+            display: grid;
+            margin: 14%;
+            margin-top: 30%;
+        }
+
+
+
+        .Item1 {
+            grid-area: header;
+            background-color: #020253;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+        }
+
+        .Item2 {
+            grid-area: pic1;
+        }
+
+        .Item3 {
+            grid-area: pic2;
+        }
+
+        .Item4 {
+            grid-area: pic3;
+        }
+
+        .Item5 {
+            grid-area: pic4;
+        }
+
+        .Item6 {
+            grid-area: pic5;
+        }
+
+        .Item7 {
+            grid-area: pic6;
+        }
+
+        .Item8 {
+            grid-area: pic7;
+        }
+
+        .Item9 {
+            grid-area: pic8;
+        }
+
+        .Item10 {
+            grid-area: pic10;
+        }
+
+        .Item11 {
+            grid-area: pic9;
+        }
+
+        .Item12 {
+            grid-area: pic12;
+        }
+
+        .Item13 {
+            grid-area: pic11;
+        }
+
+        .Item14 {
+            grid-area: pic14;
+        }
+
+        .Item15 {
+            grid-area: pic13;
+        }
+
+        .Item16 {
+            grid-area: landing;
+            background: #8E097C 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+
+        .formContainer {
+            display: grid;
+            place-items: center;
+            margin: 10%;
+            direction: rtl;
+        }
+
+        h1 {
+            text-align: center;
+            font: normal normal bold 16pt Assistant;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+        }
+
+        p1 {
+            text-align: center;
+            font: normal normal normal 9pt Assistant;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+        }
+
+        form {
+            display: grid;
+            grid-gap: 10%;
+            margin-top: 10%;
+            text-align: right;
+            grid-template-rows: repeat(6, 1fr);
+
+        }
+
+        .label- {
+            text-align: right;
+            font: normal normal bold 9pt Heebo;
+            letter-spacing: 0px;
+            color: #0EE1DA;
+            opacity: 1;
+            margin-top: 7%;
+        }
+
+        .input- {
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            border: none;
+            opacity: 1;
+            width: 100%;
+            height: 75%;
+            border: none;
+            border-bottom: 3px solid #0EE1DA;
+
+        }
+
+        .input-1 {
+            background: #E5EEFF 0% 0% no-repeat padding-box;
+            border: none;
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-bottom: 3px solid #0EE1DA;
+
+        }
+
+        .formItem3 {
+            grid-row: 3/7;
+        }
+
+        .sendButton {
+            background: #0EE1DA 0% 0% no-repeat padding-box;
+            opacity: 1;
+            width: 102%;
+            height: 80%;
+            margin-top: 5%;
+            letter-spacing: 0.36px;
+            border: none;
+        }
+
+        .textInBtn {
+            font: normal normal bold 9pt Heebo;
+            color: #011560;
+            text-align: center;
+
+        }

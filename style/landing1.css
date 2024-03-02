@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: heebo;
+    direction: rtl;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    background-image: url("../images/projects images/images1/Path15.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 450px;
+    height: 500px;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-container-in {
+    width: 100%;
+    height: 100%;
+    padding: 10% 13%;
+    background-color: #1A1A1AD4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control-1,
+.form-control-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#form-headline {
+    width: 100%;
+    text-align: right;
+    font: bold 1.8rem Heebo;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+#form-paragraph {
+    width: 100%;
+    margin-top: 21px;
+    text-align: right;
+    font: normal 1.1rem Heebo;
+    color: #F9F9F9;
+}
+
+.label {
+    width: 100%;
+    text-align: right;
+    font: normal 1rem Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    font: normal 1rem Heebo;
+    transition: all 0.2s;
+}
+
+.input:hover {
+    background: #e2e2e2;
+    border: 1.5px solid #D31C75;
+}
+
+.button {
+    width: 100%;
+    margin: 33px 0 80px 0;
+}
+
+#btn {
+    width: 166px;
+    height: 30px;
+    color: #ffffff;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    font: normal normal bold 22px/30px Heebo;
+    border: 0;
+    transition: all 0.2s;
+}
+
+#btn:hover {
+    cursor: pointer;
+    color: #D31C75;
+    background: #ffffff;
+    border: 1px solid #D31C75;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.297);
+}
+
+
+/* BREAK POINT */
+@media screen and (max-width:800px) {
+    .form-container {
+        width: 70%;
+        height: 85%;
+        margin: 0;
+    }
+
+    .form-container-in {
+        width: 100%;
+        height: 100%;
+        padding: 10% 10%;
+    }
+
+    .form-control-1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5em;
+        text-align: center;
+    }
+
+    #form-headline {
+        text-align: center;
+        font: normal normal 900 25px/30px Heebo;
+    }
+
+    #form-paragraph {
+        text-align: center;
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    .label {
+        width: 100%;
+        height: 21px;
+        text-align: right;
+        font: normal normal bold 14px/21px Heebo;
+    }
+
+    .input {
+        width: 100%;
+        height: 28px;
+        font: normal normal 14px/21px Heebo;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+
+    #btn {
+        width: 84px;
+        height: 33px;
+        font: normal normal bold 15px/20px Heebo;
+        letter-spacing: 0.23px;
+    }
+}

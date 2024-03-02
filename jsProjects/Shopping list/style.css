@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #FF004D, #1D2B53);
+}
+
+.container {
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.box {
+    background: #1D2B53;
+    padding: 12%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 1.75em;
+    text-align: center;
+    color: #FAEF5D;
+    margin: 2vh;
+}
+
+#UserList {
+    width: 69%;
+    outline: none;
+}
+
+#btnList {
+    background: #FAEF5D;
+    color: #1D2B53;
+    width: 28.34%;
+    font-weight: 500;
+    border: none;
+    height: 4vh;
+    cursor: pointer;
+}
+
+
+li {
+    list-style: none;
+    font-size: 11pt;
+    user-select: none;
+    padding: 0;
+    position: relative;
+    padding-left: 20%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    color: #fff;
+}
+
+.removeBtn {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1D2B53;
+    background-image: url(minus-01.png);
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 5pt;
+    left: 0;
+}
+
+.checkie {
+    position: absolute;
+    right: 0;
+    top: 42%;
+}
+
+.checkie:checked {
+    accent-color: #faef5d;
+}
