@@ -1,8 +1,7 @@
 // Function create an element
 export function createDiv() {
-    // In html - "select option"
-    const someElement = document.getElementById('someElement').value;
-    if (someElement) {
+    const anyElement = document.getElementById('someElement').value;
+    if (anyElement) {
 
         const newElement = document.createElement(someElement);
     
