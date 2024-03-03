@@ -8,20 +8,20 @@ export function save() {
 
     // check every time 
     for (let i = 0; i < children.length; i++) {
-        const element = children[i];
+        const El = children[i];
         const elementData = {
-            tag: element.tagName,
-            content: element.textContent,
+            tag: El.tagName,
+            content: El.textContent,
             style: {
-                width: element.style.width,
-                height: element.style.height,
-                border: element.style.border,
-                borderRadius: element.style.borderRadius,
-                backgroundColor: element.style.backgroundColor,
-                fontSize: element.style.fontSize,
-                color: element.style.color,
-                padding: element.style.padding,
-                margin: element.style.margin
+                width: El.style.width,
+                height: El.style.height,
+                border: El.style.border,
+                borderRadius: El.style.borderRadius,
+                backgroundColor: El.style.backgroundColor,
+                fontSize: El.style.fontSize,
+                color: El.style.color,
+                padding: El.style.padding,
+                margin: El.style.margin
             }
         };
         elementsData.push(elementData);
