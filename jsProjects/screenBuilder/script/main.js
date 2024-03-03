@@ -1,7 +1,7 @@
-import { createDiv } from "./createElement.js";
+import { createDiv } from "./createEl.js";
 import { clearFunc, yesFunc, noFunc } from "./btn.js";
-import { save } from "./localStorage.js";
-import { loadElements } from "./localStorage.js";
+import { save } from "./localStoragefunc.js";
+import { loadElements } from "./localStoragefunc.js";
 
 // When the user click the button - the element created
 document.getElementById('createBtn').addEventListener('click', createDiv);
