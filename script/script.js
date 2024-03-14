@@ -13,7 +13,7 @@ function showThankYouMessage() {
     // Hide the thank you message after a few seconds (e.g., 5 seconds)
     setTimeout(function () {
         thankYouMessage.style.display = 'none';
-    }, 5000);
+    }, 10000);
 }
 
 // Attach the showThankYouMessage function to the button's click event
